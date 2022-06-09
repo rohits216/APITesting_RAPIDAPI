@@ -26,7 +26,7 @@ public class SentimentTest {
         
         RestAssured.baseURI= "https://sentiment-analysis9.p.rapidapi.com/sentiment";
 		String response=given().log().all().header("Content-Type","application/json")
-		.header("X-RapidAPI-Key","328d7f0abbmsh266b5ab34494caep1aa7aajsndbfed578046e")
+		.header("X-RapidAPI-Key","**********")
 		.header("X-RapidAPI-Host","sentiment-analysis9.p.rapidapi.com")
 		.body(payload.AddPlace(val))
 		.when().post("https://sentiment-analysis9.p.rapidapi.com/sentiment")
