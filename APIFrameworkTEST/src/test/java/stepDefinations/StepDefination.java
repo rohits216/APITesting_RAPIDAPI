@@ -44,7 +44,7 @@ public class StepDefination  {
 
 		Root root = given().log().all().queryParam("country", "usa").queryParam("day", "2020-06-02")
 				.header("Content-Type", "application/json")
-				.header("X-RapidAPI-Key", "328d7f0abbmsh266b5ab34494caep1aa7aajsndbfed578046e")
+				.header("X-RapidAPI-Key", "***********")
 				.header("X-RapidAPI-Host", "covid-193.p.rapidapi.com").when()
 				.get("https://covid-193.p.rapidapi.com/history").as(Root.class);
 
